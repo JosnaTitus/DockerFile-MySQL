@@ -27,8 +27,9 @@ ENV MYSQL_ROOT_PASSWORD 123
 ENV MYSQL_DATABASE pucsdStudents 
 ENV MYSQL_USER pucsd 
 ENV MYSQL_PASSWORD pucsd 
-DD test.sql /docker-entrypoint-initdb.d 
+ADD test.sql /docker-entrypoint-initdb.d 
 EXPOSE 4040
+
 First, we will be using mysql image with its latest version. So ‘’FROM mysql:latest” command will pull the mysql image latest version.
 Then we will specify some Environment variables as we have to use them while creating mysql account. So, we will specify environment variables as mysql root password, mysql database name, mysql username, mysql password.
 Now we can directly connect to Database pucsdStudents but here we have to import some data in it. So i have created a sql file as test.sql to import data from it. According to MySQL container documentation if we want to execute a file at beginning then we will write command “ADD” following file name which is to be imported, and by default this file should be added to specific directory called “docker-entrypoint-initdb.d ”. sql file should be at same directory of Dockerfile.
