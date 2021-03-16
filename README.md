@@ -22,19 +22,19 @@ Before doing this, you can check your databases as well as table by using comman
 
 Explanation of DockerFile and its instructions: -
 
-FROM mysql:latest 
+  FROM mysql:latest 
 
-ENV MYSQL_ROOT_PASSWORD 123 
+  ENV MYSQL_ROOT_PASSWORD 123 
 
-ENV MYSQL_DATABASE pucsdStudents 
+  ENV MYSQL_DATABASE pucsdStudents 
 
-ENV MYSQL_USER pucsd 
+  ENV MYSQL_USER pucsd 
 
-ENV MYSQL_PASSWORD pucsd 
+  ENV MYSQL_PASSWORD pucsd 
 
-ADD test.sql /docker-entrypoint-initdb.d 
+  ADD test.sql /docker-entrypoint-initdb.d 
 
-EXPOSE 4040
+  EXPOSE 4040
 
 First, we will be using mysql image with its latest version. So ‘’FROM mysql:latest” command will pull the mysql image latest version.
 Then we will specify some Environment variables as we have to use them while creating mysql account. So, we will specify environment variables as mysql root password, mysql database name, mysql username, mysql password.
