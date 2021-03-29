@@ -4,11 +4,11 @@ Steps to solve this Assignment: -
 
 1.	Pull the latest code i.e; Open terminal & type following command: -
           
-          git clone https://github.com/JosnaTitus/DevOps_Assignment2.git
+          git clone https://github.com/JosnaTitus/DockerFile-MySQL.git
 
 2.	Go to cloned repo-directory and Build image using command: -
   
-          cd DevOps_Assignment2
+          cd DockerFile-MySQL
           
           sudo docker build . -t assignment_2
           
