@@ -1,8 +1,8 @@
                                      DockerFile - Build image with loaded MYSQL schema
                                      
 Problem Statement: -
-Dockerfile is used to create custome images in the docker. You can install binaries/packages in the base image and start the full fledged application in one go.
-You have to write a dockerfile which will build a mysql image with the default loaded student schema. 
+
+      Dockerfile is used to create custome images in the docker. You can install binaries/packages in the base image and start the full fledged application in one go. You have to write a dockerfile which will build a mysql image with the default loaded student schema. 
 
 Schema Details: -
 
