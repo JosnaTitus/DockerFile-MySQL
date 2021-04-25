@@ -16,12 +16,14 @@ Schema Details: -
       }   
 
 You need to write a create table and insert data queries in the test.sql file and load this file in the Dockerfile. Please use the database and table name mentioned below : 
-Database Name : pucsdSudents
-Table Name : studentDetails
+
+      Database Name : pucsdSudents
+      Table Name : studentDetails
 
 To access the database pucsdStudents, you have to create the user in the MYSQL. Please use the username and password mentioned below :  
-Username : pucsd
-password : pucsd
+
+      Username : pucsd
+      password : pucsd
 
 Steps to solve this Assignment: -
 
