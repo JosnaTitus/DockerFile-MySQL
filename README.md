@@ -1,4 +1,27 @@
                                      DockerFile - Build image with loaded MYSQL schema
+                                     
+Problem Statement: -
+Dockerfile is used to create custome images in the docker. You can install binaries/packages in the base image and start the full fledged application in one go.
+You have to write a dockerfile which will build a mysql image with the default loaded student schema. 
+
+Schema Details: -
+
+Student 
+{
+Name
+Roll no
+Address
+Mobile Number
+PAN Number
+}   
+
+You need to write a create table and insert data queries in the test.sql file and load this file in the Dockerfile. Please use the database and table name mentioned below : 
+Database Name : pucsdSudents
+Table Name : studentDetails
+
+To access the database pucsdStudents, you have to create the user in the MYSQL. Please use the username and password mentioned below :  
+Username : pucsd
+password : pucsd
 
 Steps to solve this Assignment: -
 
